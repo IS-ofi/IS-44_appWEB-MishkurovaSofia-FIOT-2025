@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:regular,italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/* ===== БУРГЕР ===== */
+/* ===== БУРГЕР ===== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* Бургер */
+.burger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Приховуємо чекбокс */
+#menu-toggle {
+  display: none;
+}
+
+/* Навігація за замовчуванням */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* --- Адаптив --- */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  /* Коли бургер натиснутий — меню показується */
+  #menu-toggle:checked + .burger + .nav-menu {
+    display: flex;
+  }
+}
+/* ===== АДАПТИВ ===== */
+@media (max-width: 1024px) {
+  .ring-block {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .ring-block img {
+    width: 100%;
+    height: auto;
+  }
+
+  .categories {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-contant {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* ===== СТИЛІ МАКЕТУ ===== */
+article {
+  background-image: url("img/image1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  padding: 50px;
+}
+main header {
+  text-align: center;
+}
+body {
+  background-color: #3a1c0e;
+}
+h2,
+h3,
+h4 {
+  font-family: Playfair Display SC;
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+h6,
+p {
+  color: #f5f5f5;
+}
+button {
+  font-size: 24px;
+  font-family: Playfair Display SC;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+h1 {
+  font-size: 64px;
+  font-family: Playfair Display;
+  font-weight: bold;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 34px;
+  color: #8b0000;
+}
+.subtitle {
+  font-size: 34px;
+  font-family: Montserrat;
+  font-weight: medium;
+}
+p {
+  font-size: 30px;
+  font-family: Montserrat;
+}
+ul {
+  list-style: none;
+  color: #f5f5f5;
+  font-size: 30px;
+}
+a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 30px;
+}
+a:link {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+a:hover {
+  color: #8b0000;
+  text-decoration: overline;
+  font-weight: bold;
+}
+
+.wbtn {
+  background-color: #f6f6f6;
+  color: #8b0000;
+}
+.rbtn {
+  background-color: #8b0000;
+  color: #000033;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+nav a:link {
+  display: inline-block;
+  margin-right: 40px;
+}
+nav a:last-child {
+  margin-right: 0;
+}
+
+.ring-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 150px 50px;
+}
+.ring-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ring-block img {
+  width: 624px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+  flex: 0.5;
+}
+.categories {
+  margin: 100px 50px;
+}
+.category-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+.category img {
+  width: 100%;
+  border-radius: 8px;
+}
+.about {
+  margin: 100px 50px;
+}
+.about-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.pre-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-contant {
+  margin: 50px 50px;
+}

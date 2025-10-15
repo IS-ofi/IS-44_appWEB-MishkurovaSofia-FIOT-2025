@@ -1,45 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk_UA">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <title>The Sophisticate</title>
+</head>
+<body>
+<article>
+<header class="main-header">
+  <a href="index.html" class="logo">The Sophisticate</a>
 
-<body style="background-color: #3A1C0E;color:#F5F5F5;">
-    <div style="background-image: url('https://i.postimg.cc/fknt78Mh/unnamed-1.png'); 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    background-size: 100%">
-        <a href="index.html">The Sophisticate</style></a>
-        <ul style="list-style-type: none;">
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="#catalog">Каталог</a></li>
-            <li><a href="#C1">Про нас</a></li>
-            <li><a href="index.html">Увійти</a></li>
-        </ul>
-        <h1> Створені для досконалості</h1>
-        <h6>Дозвольте нам стати частиною ваших найважливіших моментів.</h6>
-        <p><button>Каталог</button></p>
+  <!-- Прихований чекбокс -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Бургер -->
+  <label for="menu-toggle" class="burger">☰</label>
+
+  <!-- Навігація -->
+  <nav class="nav-menu">
+    <a href="index.html">Головна</a>
+    <a href="#">Каталог</a>
+    <a href="#">Про нас</a>
+    <a href="#">Увійти</a>
+  </nav>
+</header>
+
+
+
+  <main>
+    <header>
+      <h1>Створені для досконалості</h1>
+      <p class="subtitle">Дозвольте нам стати частиною ваших найважливіших моментів.</p>
+      <p><button class="wbtn">Каталог</button></p>
+    </header>
+  </main>
+</article>
+
+   </header>
+
+  <section class="ring-section">
+  <div class="ring-block">
+    <div>
+      <h3>Каблучки</h3>
+      <button class="rbtn">Золоті</button>
+      <button class="wbtn">Срібні</button>
     </div>
-    <main>
-        <h3>Каблучки</h3>
-        <p><button>Золоті</button></p>
-        <p><button>Срібні</button></p>
-        <img src="https://i.postimg.cc/05wXdrf8/unnamed-4.png" alt="Зображення каблучки">
-        <h3>Обручки</h3>
-        <p><button>Без вставки</button></p>
-        <p><button>Зі вставкою</button></p>
-        <img src="https://i.postimg.cc/yY5dqQRh/unnamed-3.png" alt="Зображення обручок">
-        <h2>Категорії</h2>
-        <img src="https://i.postimg.cc/bJsyF1vV/unnamed-2.png" alt="Зображення сережок">
+    <img src="https://i.postimg.cc/05wXdrf8/unnamed-4.png" alt="Каблучка">
+  </div>
+
+  <div class="ring-block">
+    <img src="https://i.postimg.cc/yY5dqQRh/unnamed-3.png" alt="Обручки">
+    <div>
+      <h3>Обручки</h3>
+      <button class="rbtn">Без вставки</button>
+      <button class="wbtn">Зі вставкою</button>
+    </div>
+  </div>
+</section>
+
+<section class="categories">
+  <h2>Категорії</h2>
+  <div class="category-list">
+    <div class="category">
+      <a href="#">
+        <img src="https://i.postimg.cc/bJsyF1vV/unnamed-2.png" alt="Сережки">
         <h3>Сережки</h3>
-        <img src="https://i.postimg.cc/k55qBWWM/unnamed-8.png" alt="Зображення ланцюжка">
-        <h3>Ланцюжки</h3>
-        <img src="https://i.postimg.cc/YSVK0Zp8/unnamed-5.png" alt="Браслети">
-        <h3>Браслети</h3>
+      </a>
+    </div>
+      <div class="category">
+        <a href="#">
+          <img src="https://i.postimg.cc/k55qBWWM/unnamed-8.png" alt="Ланцюжки">
+          <h3>Ланцюжки</h3>
+        </a>
+      </div>
+      <div class="category">
+        <a href="#">
+          <img src="https://i.postimg.cc/YSVK0Zp8/unnamed-5.png" alt="Браслети">
+          <h3>Браслети</h3>
+        </a>
+      </div>
+    </div>
+</section>
+
         <aside>
-            <h2 id="C1">Наші переваги</h2>
+            <section class="about">
+            <h2>Наші переваги</h2>
+            <div class="about-block">
+            <div>
             <img src="https://i.postimg.cc/nhbNyB3S/globe-1.png">
             <h4>Світовий досвід</h4>
             <p>Ми черпаємо натхнення з багатої культурної спадщини та мистецтва з усього світу. Наша колекція – це
@@ -50,6 +99,8 @@
             <p>Ваш комфорт і довіра – наш пріоритет. Ми гарантуємо повну безпеку ваших покупок завдяки надійним системам
                 оплати та захисту даних. Кожна прикраса має сертифікат автентичності, що підтверджує якість матеріалів
                 та дорогоцінних каменів.</p>
+            </div>
+            <div>
             <img src="https://i.postimg.cc/qRNTJ0y1/circle-user-round.png">
             <h4>Індивідуальний підхід</h4>
             <p>Ми віримо, що кожна людина унікальна. Наші консультанти готові допомогти вам знайти або створити ідеальну
@@ -60,22 +111,33 @@
             <p>Прикраси – це більше, ніж просто аксесуари. Це спогади про найважливіші події життя: дні народження,
                 річниці, весілля. Наша колекція створена, щоб допомогти вам увіковічнити ці моменти та подарувати
                 радість, яка триватиме роками.</p>
-        </aside>
+            </div>
+        </div>
+        </section>
+    </aside>
     </main>
     <hr>
     <footer>
+        <section class="footer-contant">
+        <div class="pre-footer">
+        <div>
         <a href="index.html">The Sophisticate</a>
-        <p>Контактна інформація</p>
-        <p>Телефон: +380 44 123 45 67</p>
-        <p>Email: info@thesophisticate.com</p>
-        <p>Адреса: вул. Прикладна, 1, Київ, Україна</p>
+        </div>
+        <ul >
+        <li>Контактна інформація:</li>
+        <li>Телефон: +380 44 123 45 67</li>
+        <li>Email: info@thesophisticate.com</li>
+        <li>Адреса: вул. Прикладна, 1, Київ, Україна</li>
+    </ul></div>
+        <div class="social">
         <a href="https://www.facebook.com/?locale=uk_UA">
             <img src="https://i.postimg.cc/zBMkLLGH/facebook.png" alt="Facebook">
         </a>
         <a href="https://www.instagram.com/">
             <img src="https://i.postimg.cc/wjCHk24w/instagram.png" alt="Instagram">
         </a>
+    </div>
+    </section>
     </footer>
 </body>
-
 </html>
